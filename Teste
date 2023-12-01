@@ -1,0 +1,45 @@
+// atividade programação: 17. Elabore um algoritmo que leia 15 valores informados via teclado, e apresente na tela:
+// a) O menor número digitado;
+// b) O maior número digitado;
+// c) A média dos números digitados;
+// d) Quantidade de números pares;
+// e) Quantidade de números divisíveis por 5;
+
+
+public static void exercicio17 () {
+ double val,ma=1,men=1,me=1,soma=0,np=0,dc=0;
+	    	  
+              for (int i=1; i<=15; i++) {
+	    	   System.out.println("*Informe os 15 valores:");
+	    	    val=ler.nextDouble();
+
+	        	   if (val > ma) {
+	       			ma=val;
+	       	      } 
+	        	   if (val < men) {
+	        		 men=val;
+	       		  }
+	        	   
+	        	  soma= soma+val;
+	        	   me=soma/15;
+	        	   
+	        	   if ( val % 2 ==0 ) {
+	        		  np+=1;
+	            }
+	        	   if (val % 5 ==0 ) {
+	        		   dc+=1;
+	         }
+              }
+
+              System.out.println("\n*O maior número é: " +ma+ " e o menor número é: " +men);
+               System.out.println("*A média dos valores é: " +me);
+                System.out.println("*A quantidade de números pares é: " +np);
+                 System.out.println("*A quantidade de núemros divisíveis por cinco é: " +dc);
+	    	   
+	         }
+	            }
+	
+	     
+
+	         
+
